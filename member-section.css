@@ -1,3 +1,72 @@
+/* ################ Base Layout ################### */
+/* Colors #*/
+/* Text */
+.theme-dark{
+    /* background colors */
+    --background-tertiary: var(--main-color);
+    --background-primary: rgba(var(--main-color-accent),var(--main-color-accent),var(--main-color-accent), var(--chat-transparency));
+    --background-secondary: rgba(var(--main-color-accent),var(--main-color-accent),var(--main-color-accent), var(--channels-transparency));
+    --background-secondary-alt: rgba(var(--main-color-accent),var(--main-color-accent),var(--main-color-accent), var(--chat-transparency));
+    --background-accent: rgba(var(--main-color-accent),var(--main-color-accent),var(--main-color-accent), 1);
+    --background-floating: rgba(var(--main-color-accent),var(--main-color-accent),var(--main-color-accent), .99);
+    --background-modifier-hover: rgba(255, 255, 255, 0.05);
+    --background-modifier-active: rgba(255, 255, 255, 0.07);
+    --background-modifier-selected: rgba(255, 255, 255, 0.1);
+    --background-modifier-accent: rgba(255, 255, 255, 0.1);
+    --background-mentioned: rgba(255, 255, 255, 0.05);
+    --background-mentioned-hover: rgba(255, 255, 255, 0.08);
+    --background-message-hover: rgba(255, 255, 255, 0.07);
+    --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    --channeltextarea-background: rgba(255, 255, 255, 0.05);
+
+    /* Headers and VC signal/connected status text */
+    --text-positive: var(--accent-color);
+
+    /* text default color */
+    --text-muted: var(--text-color);
+    --text-link: var(--text-muted);
+    --interactive-selected: var(--accent-color);
+    --interactive-active: var(--accent-color);
+    --interactive-normal: var(-- --accent-color);
+    --interactive-muted: rgba(255, 255, 255, 0.079);
+    --channels-default: var(--text-muted);
+    --header-primary: var(--accent-color);
+    --header-secondary: var(--text-normal);
+    
+    /* Headers and VC signal/connected status text */
+    --text-positive: var(--accent-color);
+    /* text default color */
+    --text-muted: var(--text-color);
+    --text-link: var(--text-muted);
+    --interactive-selected: var(--accent-color);
+    --interactive-active: var(--accent-color);
+    --interactive-normal: var(-- --accent-color);
+    --interactive-muted: rgba(255, 255, 255, 0.079);
+    --channels-default: var(--text-muted);
+    --header-primary: var(--accent-color);
+    --header-secondary: var(--text-normal);
+}
+/* Settings panels */
+.peopleColumn-1wMU14 {
+    background-color: var(--background-primary);
+}
+/* selected channel */
+.selected-2TbFuo::before {
+    background-color: var(--accent-color);
+  }
+/* Mentioned message accent */
+.hasReply-2Cr4KE::before {
+    background-color: var(--accent-color);
+}
+/* Setting panels solid */
+    /* Top window bar */
+.typeWindows-2-g3UY {
+    background-color: var(--app-border-color);
+}
+    /* Server panel */
+.scroller-3X7KbA, none-2-_0dP scrollerBase-_bVAAt {
+    background-color: var(--app-border-color);
+}
     /* Server icons */
 .listItem-3SmSlK {
     transition: var(--transition-time-out);
@@ -38,6 +107,9 @@
     border-radius: 5px !important;
     opacity: 0.8;
 }
+.wrapper-3Hk9OB{
+    transform: scale(105%);
+}
     /* Members */
 .container-2o3qEW {
     transition: var(--transition-time-out);
@@ -63,17 +135,19 @@
 }
     /* Members inner */
 .members-3WRCEx {
-    transition: var(--transition-time-out);
-    transition-delay: var(--transition-delay-out);
+    background-color: black;
     border-bottom-right-radius: 5px !important;
     border-top-right-radius: 5px !important;
-    filter: drop-shadow(0 0 0.5rem black) blur(var(--image-blur));
+    filter: blur(var(--image-blur));
     opacity: 0.0;
     transform: scale(1);
+    transition: var(--transition-time-out);
+    transition-delay: var(--transition-delay-out);
 }
 .members-3WRCEx:hover {
+    background-color: black;
     transition: var(--transition-time-in);
-    filter: drop-shadow(0 0 0.5rem black) blur(0px);
+    filter: blur(0px);
     opacity: 0.85;
     transform: scale(1);
 }
@@ -82,11 +156,16 @@
     background-color: var(--background-1);
     border-radius: 0%;
 }
-    /* Settings menu button fix */
-.bd-button-title {
-    background-color: #0e0f0f;
-    color: #0e0f0f;
-}
+    /* Buttons */
 .bd-button {
     background-color: var(--accent-color);
+}
+    /* Settings menu button fix */
+.bd-button-title:before {
+    background-color: var(--accent-color);
+    color: #0e0f0f;
+}
+.bd-button-title:hover {
+    background-color: var(--accent-color);
+    color: #0e0f0f;
 }
