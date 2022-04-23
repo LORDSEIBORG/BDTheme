@@ -24,7 +24,7 @@
 
     /* text default color */
     --text-muted: var(--text-color);
-    --text-link: var(--text-muted);
+    --text-link: var(--accent-color-2);
     --interactive-selected: var(--accent-color);
     --interactive-active: var(--accent-color);
     --interactive-normal: var(-- --accent-color);
