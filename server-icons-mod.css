@@ -1,0 +1,14 @@
+    /* Server icons */
+.listItem-3SmSlK {
+    transition: var(--transition-time-out);
+    transition-delay: var(--transition-delay-out);
+    opacity: var(--server-icon-opacity);
+    filter: saturate(0);
+    transform: scale(1);
+}
+.listItem-3SmSlK:hover {
+    transition: 0.1s;
+    opacity: 1;
+    filter: saturate(1);
+    transform: scale(1.2);
+}
