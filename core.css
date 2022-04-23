@@ -127,3 +127,27 @@
 .bd-button-title:hover {
     background-color: var(--text-normal);
 }
+    /* Members */
+.container-2o3qEW {
+    border-bottom-right-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    background-size: var(--member-background-size);
+    background-repeat: no-repeat;
+    background-image: var(--background-image);
+    background-color: var(--accent-color);
+    background-blend-mode: var(--background-blend-mode);
+    filter: var(--image-saturation);
+    background-position: var(--background-pos);
+    box-shadow:inset 10px 0px 10px 3px var(--background-2);
+    position: relative;
+    height: 99%;
+    margin-left: 0%;
+    margin-right: 0.1%;
+}
+    /* Members inner */
+.members-3WRCEx {
+    background-color: black;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    opacity: 0.85;
+}
